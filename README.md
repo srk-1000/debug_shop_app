@@ -68,6 +68,12 @@ rails s
 ## ヒント
 
 - 一覧ページのURLは `rails routes` コマンドで探して下さい。
+
+Prefix Verb URI Pattern          Controller#Action
+   items GET  /items(.:format)     items#index
+         POST /items(.:format)     items#create
+new_item GET  /items/new(.:format) items#new
+
 - `pry-byebug` を導入し，デバッグツールを使いながら解消してみましょう。
 
 ```rb
